@@ -10,8 +10,40 @@ namespace Line_comparision
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Line Comparison Computation Program");
+            equal();
+            
+            
+        }
+        public static void equal()
+        {
+            double one = 0;
+            double two = 0;
+            for (int i = 1; i <= 2; i++)
 
-            double obj=Program.line();
+            {
+                if (i == 1)
+                {
+                    Console.WriteLine("Enter the value for first line:");
+                    one = line();
+                    Console.WriteLine(one + " Leangth of one line  and leangth of two ");
+                }
+                else
+                {
+                    Console.WriteLine("Enter the value of second line");
+                    one = line();
+                    Console.WriteLine(two + " Leangth of the line and leangth of two");
+                }
+                if (one == two)
+                {
+                    Console.WriteLine("Lines are equaly Preferable");
+                    one= line();
+                }
+                else
+                {
+                    Console.WriteLine("Lines are  not equaly Preferable");
+                    one= line();
+                }
+            }
         }
         static double line()
         {
