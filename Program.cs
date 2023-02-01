@@ -25,23 +25,27 @@ namespace Line_comparision
                 {
                     Console.WriteLine("Enter the value for first line:");
                     one = line();
-                    Console.WriteLine(one + " Leangth of one line  and leangth of two ");
+                    Console.WriteLine(one + " Leangth of one line  and leangth of two..... ");
                 }
                 else
                 {
                     Console.WriteLine("Enter the value of second line");
                     one = line();
-                    Console.WriteLine(two + " Leangth of the line and leangth of two");
+                    Console.WriteLine(two + " Leangth of the one line and leangth of two....");
                 }
                 if (one == two)
                 {
-                    Console.WriteLine("Lines are equaly Preferable");
+                    Console.WriteLine("The two Lines are equal");
+                    one= line();
+                }
+                else if(one>two)
+                {
+                    Console.WriteLine("Line one is grater than line two");
                     one= line();
                 }
                 else
                 {
-                    Console.WriteLine("Lines are  not equaly Preferable");
-                    one= line();
+                    Console.WriteLine("Line two is grater than line one");
                 }
             }
         }
